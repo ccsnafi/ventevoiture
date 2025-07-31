@@ -35,7 +35,7 @@ Vue d’ensemble avec chiffres clés, répartition par type de véhicule, top ma
 
 Analyse géographique des ventes avec carte, performances régionales et tableau détaillé des concessionnaires.
 
-![](./Analyserégion.png)
+![](./Analyseregion.png)
 
 ---
 
