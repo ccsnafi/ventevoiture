@@ -63,23 +63,47 @@ Analyse mensuelle de l’évolution des ventes, du prix moyen et de la croissanc
 
 ---
 
-## 🔒 Sécurité – RLS (Row Level Security)
+🎯 Destinataires du rapport
+Ce tableau de bord Power BI est principalement destiné à la direction et aux décideurs de l’entreprise, notamment :
 
-Le rapport peut être **adapté avec des rôles personnalisés** selon la structure hiérarchique de l'entreprise (ex. : vue par région, par chef de zone, etc.).  
-La sécurité RLS permet de restreindre l'accès aux données en fonction du profil de l'utilisateur connecté.
+-La Direction Générale pour un suivi global des performances
+
+-La Direction Commerciale pour l’analyse des ventes par marque, modèle, région, et concessionnaire
+
+-Les Responsables Régionaux pour un suivi localisé
+
+-Les Analystes pour l’identification des tendances, comparaisons Mois/Mois (MoM) et Année/Année (YoY)
+
+
+🛡️ Ce rapport peut être décliné en plusieurs vues selon les profils d’utilisateurs, en appliquant une sécurité par rôle (RLS).
+
+## 🔐 Sécurité : Row Level Security (RLS)
+
+La structure de données permet d’ajouter des rôles RLS :
+- Par **concessionnaire** (Dealer)
+- Par **région**
+- Par **niveau d’utilisateur** (ex. direction, commercial, analyste)
+
+> ℹ️ À **adapter selon la structure de l’entreprise** : on peut filtrer dynamiquement les visuels en fonction de l'utilisateur connecté grâce à USERPRINCIPALNAME() ou USERNAME().
 
 ---
 
-## 🛠 Technologies
+## 🛠 Données & fichier source
 
-- Power BI Desktop
-- DAX (formules de mesures avancées)
-- Segoe UI (police utilisée pour un rendu professionnel)
-- Design épuré et intuitif
+- `ventes voitures.pbix` : rapport principal Power BI
+- `Car Sales.xlsx` : source de données principale
+- Images : captures de chaque page pour documentation
 
 ---
 
-## 📌 À adapter selon vos besoins
+## 📦 Améliorations futures (suggestions)
 
-- Ce rapport est un **modèle**.
-- L’ajout de **RLS**, de **pages supplémentaires** ou de **connexions directes à un entrepôt de données** peut être intégré selon la réalité de l'entreprise.
+- Ajout d’un filtre dynamique sur les types de clients (pro vs particulier)
+- Intégration du RLS par rôle hiérarchique
+- Analyse prédictive (tendance sur 6 mois)
+
+---
+
+## 🧠 Réalisé par  Afi TENUDA-EKLOU
+
+Dashboard Power BI réalisé pour developper son portfolio mais possibillité de l'adapté à une entreprise
