@@ -51,7 +51,7 @@ Analyse des modèles, unités vendues, prix moyen par modèle. Visuels : bulles,
 
 Suivi de la performance de chaque dealer, avec évolution des ventes dans le temps et top 10 concessionnaires.
 
-![](./Perfommanceconce.png
+![](./Perfommanceconce.png)
 
 ---
 
