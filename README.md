@@ -1,5 +1,7 @@
 # 📊 Power BI Dashboard – Car Sales Performance
-
+   ## 🧠 Created by Afi TENUDA-EKLOU 
+   Mail: afitenuda@gmail.com
+   linkden:https://www.linkedin.com/in/afi-tenuda-eklou-832101219/
 This Power BI report provides a strategic and executive view of **car sales performance**, helping management monitor key indicators across vehicles, models, regions, and dealerships.
 
 ---
