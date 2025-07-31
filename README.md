@@ -1,109 +1,109 @@
-# 📊 Tableau de Bord - Ventes de Voitures
+# 📊 Power BI Dashboard – Car Sales Performance
 
-Ce rapport Power BI permet à une direction ou un comité exécutif de suivre et d’analyser les performances commerciales du secteur automobile (véhicules vendus, modèles, régions, concessionnaires, etc.).
-
----
-
-## 📝 Objectifs / Besoins
-
-- Suivre l'évolution des **ventes totales** et du **prix moyen**.
-- Comparer les performances **par région**, **marque** et **modèle**.
-- Identifier les **meilleurs concessionnaires**.
-- Analyser les **tendances mensuelles** (MoM).
-- Offrir une **vue synthétique globale**.
-- Faciliter l’ajout de la **sécurité RLS (Row Level Security)** selon la structure de l’entreprise.
+This Power BI report provides a strategic and executive view of **car sales performance**, helping management monitor key indicators across vehicles, models, regions, and dealerships.
 
 ---
 
-## 📁 Contenu
+## 📝 Goals / Business Needs
 
-- `ventes voitures.pbix` : Fichier Power BI du rapport.
-- `Car Sales.xlsx` : Source de données.
-- Images : Un screenshot par page du rapport pour illustration.
+- Monitor the evolution of **total sales** and **average price**.
+- Compare performance by **region**, **brand**, and **model**.
+- Identify **top-performing dealerships**.
+- Analyze **monthly trends** (MoM).
+- Offer a **comprehensive and visual executive summary**.
+- Enable secure access via **Row Level Security (RLS)** based on company structure.
 
 ---
 
-## 📌 Page 1 – Reporting Global
+## 📁 Contents
 
-Vue d’ensemble avec chiffres clés, répartition par type de véhicule, top marques, comparaison MoM/YoY et évolution journalière.
+- `ventes voitures.pbix` – Power BI report file  
+- `Car Sales.xlsx` – Main data source  
+- `./images/` – One screenshot per report page for documentation  
+
+---
+
+## 📌 Page 1 – Global Overview
+
+High-level KPIs, vehicle type breakdown, top brands, MoM/YoY comparison, and daily trends.
 
 ![](./ReportingGlobal.png)
 
 ---
 
-## 📌 Page 2 – Analyse par Région
+## 📌 Page 2 – Regional Analysis
 
-Analyse géographique des ventes avec carte, performances régionales et tableau détaillé des concessionnaires.
+Interactive map with heat zones and regional bar charts. Includes detailed dealer table.
 
 ![](./Analyseregion.png)
 
 ---
 
-## 📌 Page 3 – Analyse Marques/Modèles
+## 📌 Page 3 – Brand/Model Analysis
 
-Analyse des modèles, unités vendues, prix moyen par modèle. Visuels : bulles, histogrammes et tableau dynamique.
+Model-level analysis: units sold, average price, and performance. Includes scatter plot, bar chart, and dynamic table.
 
 ![](./Analysmodeles.png)
 
 ---
 
-## 📌 Page 4 – Performance par Concessionnaire
+## 📌 Page 4 – Dealership Performance
 
-Suivi de la performance de chaque dealer, avec évolution des ventes dans le temps et top 10 concessionnaires.
+Track individual dealership performance, sales trends, and top 10 rankings.
 
 ![](./Perfommanceconce.png)
 
 ---
 
-## 📌 Page 5 – Évolution Temporelle
+## 📌 Page 5 – Time-Based Analysis
 
-Analyse mensuelle de l’évolution des ventes, du prix moyen et de la croissance MoM.
+Monthly evolution of sales and average price, including MoM growth with trend line.
 
 ![](./evolutiontemporelle.png)
 
 ---
 
-🎯 Destinataires du rapport
-Ce tableau de bord Power BI est principalement destiné à la direction et aux décideurs de l’entreprise, notamment :
+### 🎯 Target Audience
 
--La Direction Générale pour un suivi global des performances
+This Power BI dashboard is primarily designed for the company’s **executive and management teams**, including:
 
--La Direction Commerciale pour l’analyse des ventes par marque, modèle, région, et concessionnaire
+- **General Management** – for a global overview of sales performance  
+- **Sales Management** – to track performance by brand, model, region, and dealership  
+- **Regional Managers** – to monitor performance within their assigned territory  
+- **Business Analysts** – to analyze monthly and yearly growth trends  
 
--Les Responsables Régionaux pour un suivi localisé
-
--Les Analystes pour l’identification des tendances, comparaisons Mois/Mois (MoM) et Année/Année (YoY)
-
-
-🛡️ Ce rapport peut être décliné en plusieurs vues selon les profils d’utilisateurs, en appliquant une sécurité par rôle (RLS).
-
-## 🔐 Sécurité : Row Level Security (RLS)
-
-La structure de données permet d’ajouter des rôles RLS :
-- Par **concessionnaire** (Dealer)
-- Par **région**
-- Par **niveau d’utilisateur** (ex. direction, commercial, analyste)
-
-> ℹ️ À **adapter selon la structure de l’entreprise** : on peut filtrer dynamiquement les visuels en fonction de l'utilisateur connecté grâce à USERPRINCIPALNAME() ou USERNAME().
+> 🛡️ This report can be adapted into user-specific views through **Role-Based Security (RLS)**.
 
 ---
 
-## 🛠 Données & fichier source
+## 🔐 Row-Level Security (RLS)
 
-- `ventes voitures.pbix` : rapport principal Power BI
-- `Car Sales.xlsx` : source de données principale
-- Images : captures de chaque page pour documentation
+The data model is structured to support **dynamic user filtering**, including:
 
----
+- By **Dealership**
+- By **Region**
+- By **User Role** (executive, manager, analyst)
 
-## 📦 Améliorations futures (suggestions)
-
-- Ajout d’un filtre dynamique sur les types de clients (pro vs particulier)
-- Intégration du RLS par rôle hiérarchique
-- Analyse prédictive (tendance sur 6 mois)
+> ℹ️ Custom roles can be implemented using `USERPRINCIPALNAME()` to filter the data for each logged-in user.
 
 ---
 
-## 🧠 Réalisé par  Afi TENUDA-EKLOU
+## 🛠 Data & Sources
 
-Dashboard Power BI réalisé pour developper son portfolio mais possibillité de l'adapté à une entreprise
+- `ventes voitures.pbix` – Main Power BI report  
+- `Car Sales.xlsx` – Clean Excel data source  
+- Visual assets (PNG) – For documentation and preview  
+
+---
+
+## 📦 Future Enhancements
+
+- Add dynamic filtering by **customer type** (individual vs corporate)
+- Implement RLS based on **hierarchical roles**
+- Integrate **predictive trends** (forecast for upcoming 6 months)
+
+---
+
+## 🧠 Created by Afi TENUDA-EKLOU
+
+This Power BI dashboard was developed for **portfolio purposes**, and can be easily **adapted for enterprise use** across any car sales company or dealership network.
